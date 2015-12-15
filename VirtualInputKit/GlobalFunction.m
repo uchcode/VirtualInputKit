@@ -15,6 +15,6 @@ void VirtualInput(NSString *source)
         CGEventRef event = CGEventCreateKeyboardEvent(nil, 0, true);
         CGEventKeyboardSetUnicodeString(event, 1, &character);
         CGEventPost(kCGSessionEventTap, event);
-        usleep(10000);
+        //usleep(10000);
     }
 }
